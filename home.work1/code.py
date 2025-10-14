@@ -1,5 +1,5 @@
 import math
-
+#скоро буду доделывать
 def lvl_2(a, b, k):
     def add(x, y):
         return x + y
