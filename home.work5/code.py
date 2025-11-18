@@ -38,6 +38,7 @@ print(f"Средний возраст выживших: {survived_age}")
 die_age = test[test['Survived'] == 0]['Age'].mean()
 print(f"Средний возраст умерших: {die_age}")
 
+test = test.dropna() #удаляю пустые 
 # 3 - новая таблица.
 
 grouped = test.groupby(['Sex', 'Pclass'])
